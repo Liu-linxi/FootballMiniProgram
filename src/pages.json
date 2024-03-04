@@ -1,0 +1,131 @@
+{
+	"pages": [
+		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pagesNavigation/index/index",
+			"style": {
+				"navigationBarTitleText": "河南嵩山龙门",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/home/teamIntroduction/teamIntroduction",
+			"style": {
+				"navigationBarTitleText": "球队介绍",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/activity/active/active",
+			"style": {
+				"navigationBarTitleText": "最新活动",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/activity/active/components/linxi-entry",
+			"style": {}
+		},
+		{
+			"path": "pages/home/newsList/newsList",
+			"style": {
+				"navigationBarTitleText": "新闻速递",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/home/newsDetail/newsDetail",
+			"style": {
+				"navigationBarTitleText": "新闻速递",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/activity/active/suborder",
+			"style": {
+				"navigationBarTitleText": "提交订单",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/home/teamIntroduction/teamOverview",
+			"style": {
+				"navigationBarTitleText": "球队介绍",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/person/coupon/coupon",
+			"style": {
+				"navigationBarTitleText": "我的优惠券",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/person/order-list/order-list",
+			"style": {
+				"navigationBarTitleText": "未完成订单",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/person/integral/integral",
+			"style": {
+				"navigationBarTitleText": "我的积分",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/home/registeredMember/registeredMember",
+			"style": {
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/person/order-detail/order-detail",
+			"style": {
+				"navigationBarTitleText": "未完成订单",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/person/mail/mail",
+			"style" : 
+			{
+				"navigationBarTitleText" : "站内信",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/person/perInfo/perInfo",
+			"style" : 
+			{
+				"navigationBarTitleText" : "个人信息",
+				"enablePullDownRefresh" : false
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "河南嵩山龙门",
+		"navigationBarBackgroundColor": "#E52119",
+		"backgroundColor": "#E52119"
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+}

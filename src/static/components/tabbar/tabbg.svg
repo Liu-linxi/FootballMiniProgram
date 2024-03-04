@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="100px" viewBox="0 0 375 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>路径</title>
+    <defs>
+        <path d="M212.13,16.85048 C214.214,11.90499 218.976,8.347885 224.594,8 L363,8 C369.63,8 375,13.37 375,20 L375,100 L0,100 L0,20 C0,13.37 5.37,8 12,8 L150.312,8 C155.983,8.312353 160.781,11.8769 162.874,16.86316 C166.356,27.1197 176.066,34.4995 187.5,34.4995 C198.939,34.4995 208.652,27.1136 212.13,16.85048 Z" id="path-1"></path>
+        <filter x="-2.7%" y="-13.0%" width="105.3%" height="121.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="-2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页备份" transform="translate(0, -1228.001)">
+            <g id="路径" transform="translate(0, 1228.001)">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>
