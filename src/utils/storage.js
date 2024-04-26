@@ -21,7 +21,7 @@ export function getStorage (key) {
 	})
 }
 
-export function getStorageStrSync (key) {
+export function getStorageSync (key) {
 	const value = uni.getStorageSync(key)
 	if (value) return value
 }

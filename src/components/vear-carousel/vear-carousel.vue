@@ -68,7 +68,7 @@
 			height: 90rpx;
 			position: absolute;
 			bottom: 8rpx;
-			background-color: #E52119;
+			background-color: #D81828;
 			-webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
 			clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
 			border-radius: 0 0 6rpx 6rpx;

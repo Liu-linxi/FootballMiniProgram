@@ -1,20 +1,23 @@
 <template>
 	<view class="block">
-		<view class="d-flex a-center main-pink-color" v-for="li in 3" :key="li" @tap="toActiveDetail">
-			<image src="" style="width:240rpx;height: 200rpx;" class="main-bg-color flex-shrink"></image>
-			<view class="right ml-4">
-				<view class="title">
-					远征报名
+		<view class="d-flex a-center main-pink-color" v-for="li in activityList" :key="li.id" @tap="toActiveDetail(li.id)">
+			<image :src="li.smallPic" style="width:240rpx;height: 200rpx;" class="main-bg-color flex-shrink"></image>
+			<view class="right ml-4 overflow-hidden">
+				<view class="title truncate2 ">
+					{{li.title}}
 				</view>
-				<view class="secTitle">
-					11月4日，山东泰山V
+				<view class="secTitle truncate">
+					{{li.abstractWord}}
 				</view>
 				<view class="smlTitle d-flex a-center j-sb">
-					<view>报名20/50</view> 
+					<view>报名{{li.applicants}}/{{li.preset}}</view>
 					<view class="mr-2">
-						<text class="gray-color" v-show="li==1">已截止</text>
-						<text class="main-color" v-show="li==2">未开始</text>
-						<text class="green-color" v-show="li==3">进行中</text>
+						<text class="main-color" v-show="li.activityStatus==0">报名未开始</text>
+						<text class="gray-color" v-show="li.activityStatus==1">报名已截止</text>
+						<text class="green-color" v-show="li.activityStatus==2">报名进行中</text>
+						<text class="gray-color" v-show="li.activityStatus==3">活动已结束</text>
+						<text class="gray-color" v-show="li.activityStatus==4">活动未开始</text>
+						<text class="green-color" v-show="li.activityStatus==5">活动进行中</text>
 					</view>
 				</view>
 			</view>
@@ -23,29 +26,36 @@
 </template>
 
 <script setup>
+	const props = defineProps(["activityList"])
 	const emit = defineEmits(['toActiveDetail'])
-	function toActiveDetail(){
-		emit("toActiveDetail")
+
+	function toActiveDetail(id) {
+		emit("toActiveDetail", id)
 	}
 </script>
 
 <style lang="scss" scoped>
-	.block{
-		margin: 24rpx 0 40rpx;
-		.d-flex{
+	.block {
+		margin: 24rpx 0 0rpx;
+
+		.d-flex {
 			margin-top: 14rpx;
-			.right{
+
+			.right {
 				width: 100%;
-				.title{
+
+				.title {
 					font-size: 32rpx;
 					color: #171717;
 					font-weight: 500;
 				}
-				.secTitle{
+
+				.secTitle {
 					font-weight: 400;
 					color: #292929;
 				}
-				.smlTitle{
+
+				.smlTitle {
 					font-size: 24rpx;
 					font-weight: 400;
 					color: #8A8A8A;

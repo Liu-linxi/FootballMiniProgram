@@ -1,7 +1,11 @@
 <template>
-	<view class="status">
-		<view :style="{lineHeight:heightLine+'px',height:heightLine+'px',paddingTop:statusBarHeight+'px'}">
-			{{title}}
+	<view class="">
+		<view class="status">
+			<view :style="{lineHeight:heightLine+'px',height:heightLine+'px',paddingTop:statusBarHeight+'px'}">
+				{{title}}
+			</view>
+		</view>
+		<view class="main-bg-color" :style="{lineHeight:heightLine+'px',height:heightLine+'px',paddingTop:statusBarHeight+'px'}">
 		</view>
 	</view>
 </template>
@@ -26,8 +30,11 @@
 
 <style lang="scss" scoped>
 	.status{
-		background-color: #E52119;
+		background-color: #D81828;
 		text-align: center;
 		color: #FFFFFF;
+		position: fixed;
+		width: 100%;
+		z-index: 10;
 	}
 </style>

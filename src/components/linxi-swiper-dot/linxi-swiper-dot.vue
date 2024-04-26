@@ -1,7 +1,7 @@
 <template>
 	<view class="swiper-box">
 		<swiper class="swiper" :indicator-dots="false" :autoplay="true" :interval="3000" :duration="500" :circular="true" @change="change">
-			<swiper-item v-for="(item,index) in swiperList" :key="index">
+			<swiper-item v-for="(item,index) in swiperList" :key="item.id||index">
 				<view class="swiper-item" @click.stop="swiperItemClick(item)">
 					<image style="width: 100%;height: 200px;" :src="item[imgField]" mode="" lazy-load="true" :data-index="index" @tap="previewPhoto"></image>
 				</view>
@@ -44,7 +44,7 @@
 			},
 			swiperItemClick(item) {
 
-				this.$emit("click", item);
+				this.$emit("swiperItemClick", item);
 
 			},
 			/* 预览照片 */

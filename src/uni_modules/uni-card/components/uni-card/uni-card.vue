@@ -4,7 +4,7 @@
 		<!-- 封面 -->
 		<slot name="cover">
 			<view v-if="cover" class="uni-card__cover">
-				<image class="uni-card__cover-image" mode="widthFix" @click="onClick('cover')" :src="cover"></image>
+				<image class="uni-card__cover-image" mode="" @click="onClick('cover')" :src="cover"></image>
 			</view>
 		</slot>
 		<slot name="title">

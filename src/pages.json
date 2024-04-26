@@ -1,4 +1,76 @@
 {
+	"subPackages": [{
+		"root": "pagePackage",
+		"pages": [{
+				"path": "ceshi/ceshi",
+				"style": {
+					"navigationBarTitleText": "测试",
+					"enablePullDownRefresh": false,
+					"mp-weixin": {
+						"usingComponents": {
+							"student-verify": "plugin://studentVerify/verify"
+						}
+					}
+				}
+			},
+			{
+				"path": "shop-detail/shop-detail",
+				"style": {
+					"navigationBarTitleText": "商城",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path" : "shop-cart/shop-cart",
+				"style" : 
+				{
+					"navigationBarTitleText" : "购物车",
+					"enablePullDownRefresh" : false
+				}
+			},
+			{
+				"path" : "placeOrder/placeOrder",
+				"style" : 
+				{
+					"navigationBarTitleText" : "提交订单",
+					"enablePullDownRefresh" : false
+				}
+			},
+			{
+				"path" : "shop-orderDetail/shop-orderDetail",
+				"style" : 
+				{
+					"navigationBarTitleText" : "",
+					"enablePullDownRefresh" : false
+				}
+			},
+			{
+				"path" : "evaluate/evaluate",
+				"style" : 
+				{
+					"navigationBarTitleText" : "评价",
+					"enablePullDownRefresh" : false
+				}
+			},
+			{
+				"path" : "coupon-center/coupon-center",
+				"style" : 
+				{
+					"navigationBarTitleText" : "领券中心",
+					"enablePullDownRefresh" : false
+				}
+			},
+			{
+				"path" : "coupon-shop/coupon-shop",
+				"style" : 
+				{
+					"navigationBarTitleText" : "",
+					"enablePullDownRefresh" : false,
+					"navigationStyle": "custom"
+				}
+			}
+		]
+	}],
 	"pages": [
 		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{

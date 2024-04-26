@@ -36,7 +36,7 @@ const cityArray = {
   91: '国外'
 }
 // 验证身份证号；获取出生日期男女
-export function checkIdCard(idCard, type) {
+export function checkIdCard(idCard, type=1) {
   // type 1验证身份证 2获取个人信息
   if (idCard.length == 15) {
     idCard = idCard.replace(/(\d{6})(\d{9})/, '$119$2x')

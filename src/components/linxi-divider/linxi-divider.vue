@@ -19,7 +19,7 @@
 
 <style lang="scss" scoped>
 .divider{
-	border: 1rpx solid #DEDEDE;
+	border-bottom: 1rpx solid #DEDEDE;
 	background-color: #DEDEDE;
 }
 </style>
